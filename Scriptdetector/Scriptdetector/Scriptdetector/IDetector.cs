@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using LeagueSharp;
 using SharpDX;
 
-namespace TheCheater
+namespace Scriptdetector
 {
     public enum DetectorSetting { Preferred, Safe, AntiHumanizer} // Just Menu settings
     interface IDetector

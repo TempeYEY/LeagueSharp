@@ -7,9 +7,9 @@ using LeagueSharp.Common;
 using SharpDX;
 using Color = System.Drawing.Color;
 
-namespace TheCheater
+namespace Scriptdetector
 {
-    class TheCheater
+    class Scriptdetector
     {
         private readonly Dictionary<int, List<IDetector>> _detectors = new Dictionary<int, List<IDetector>>();
         private Menu _mainMenu;
@@ -17,7 +17,7 @@ namespace TheCheater
 
         public void Load()
         {
-            _mainMenu = new Menu("The Cheater", "thecheater", true);
+            _mainMenu = new Menu("Scriptdetector by TempeYEY", "Scriptdetector", true);
             var detectionType = new MenuItem("detection", "Detection").SetValue(new StringList(new[] { "Preferred", "Safe", "AntiHumanizer" }));
             detectionType.ValueChanged += (sender, args) =>
             {
@@ -46,7 +46,7 @@ namespace TheCheater
             Obj_AI_Base.OnNewPath += OnNewPath;
             Drawing.OnDraw += Draw;
     
-            Notifications.AddNotification("TheCheater loaded!", 2);
+            Notifications.AddNotification("Scriptdetector loaded!", 2);
         }
 
         private void Draw(EventArgs args)

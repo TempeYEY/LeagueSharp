@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using LeagueSharp.Common;
 
-namespace TheCheater
+namespace Scriptdetector
 {
     class Program
     {
         static void Main()
         {
-            CustomEvents.Game.OnGameLoad += (args) => new TheCheater().Load();
+            CustomEvents.Game.OnGameLoad += (args) => new Scriptdetector().Load();
         }
     }
 }

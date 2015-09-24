@@ -7,7 +7,7 @@ using LeagueSharp;
 using LeagueSharp.Common;
 using SharpDX;
 
-namespace TheCheater
+namespace Scriptdetector
 {
     class SacOrbwalkerDetector : IDetector
     {
